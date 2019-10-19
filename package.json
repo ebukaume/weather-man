@@ -1,0 +1,35 @@
+{
+  "name": "weather-man",
+  "version": "1.0.0",
+  "description": "Weather Man is a weather app built JavaScript. It consumes API from two different sources (Open Weather API and Google Maps API) and dynamically re-renders parts of the DOM.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode production",
+    "deploy": "live-server ./dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebukaume/weather-man.git"
+  },
+  "keywords": [
+    "weather",
+    "API",
+    "maps"
+  ],
+  "author": "Ebuka Umeokonkwo <ebukaume@gmail.com> (https://github.com/ebukaume/weather-man)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ebukaume/weather-man/issues"
+  },
+  "homepage": "https://github.com/ebukaume/weather-man#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
+  }
+}
