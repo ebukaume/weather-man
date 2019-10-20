@@ -62,3 +62,6 @@ typings/
 
 # local linter
 .eslintrc.json
+
+#secrets
+.keys.config.js
