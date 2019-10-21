@@ -13,7 +13,7 @@
     "build": "webpack --mode production",
     "watch": "webpack --watch --mode production",
     "deploy": "live-server ./dist/",
-    "start": "./dist/index.html"
+    "start": "node ./dist/server.js"
   },
   "repository": {
     "type": "git",

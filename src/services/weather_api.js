@@ -1,9 +1,8 @@
 import fetchAPI from './fetch_api';
 import { kelvinToFahrenheit, kelvinToCelcius, formatDatetime } from '../util';
-// import keys from '../../.keys.config';
 
 const weatherAPI = (() => {
-  const BASE_ENDPOINT = 'https://api.openweathermap.org/data/2.5/weather';
+  const BASE_ENDPOINT = 'http://api.openweathermap.org/data/2.5/weather';
   const API_KEY = process.env.WEATHER_API_KEY;
 
   const parseWeatherData = (data) => {

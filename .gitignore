@@ -65,3 +65,7 @@ typings/
 
 #secrets
 .keys.config.js
+
+#style dev helpers
+.scss
+.css.map
