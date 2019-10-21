@@ -55,8 +55,8 @@ const DOM = (() => {
   };
 
   const error = (city) => {
-    // eslint-disable-next-line no-alert
     clearInputField();
+    // eslint-disable-next-line no-alert
     alert(`Could not find weather information for ${city}!`);
   };
 

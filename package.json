@@ -2,6 +2,10 @@
   "name": "weather-man",
   "version": "1.0.0",
   "description": "Weather Man is a weather app built JavaScript. It consumes API from two different sources (Open Weather API and Google Maps API) and dynamically re-renders parts of the DOM.",
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
   "main": "index.js",
   "private": true,
   "scripts": {
