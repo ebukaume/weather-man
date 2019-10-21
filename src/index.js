@@ -1,3 +1,4 @@
+import './assets/scss/main.scss';
 import weatherAPI from './services/weather_api';
 import DOM from './dom';
 import geolocationAPI from './services/geolocation_api';

@@ -2,8 +2,8 @@ import fetchAPI from './fetch_api';
 import { kelvinToFahrenheit, kelvinToCelcius, formatDatetime } from '../util';
 
 const weatherAPI = (() => {
-  const BASE_ENDPOINT = 'http://api.openweathermap.org/data/2.5/weather';
-  const API_KEY = process.env.WEATHER_API_KEY;
+  const BASE_ENDPOINT = 'https://api.openweathermap.org/data/2.5/weather';
+  const API_KEY = 'a00349b812384489f74e567e7a784ebb';
 
   const parseWeatherData = (data) => {
     const { country } = data.sys;
