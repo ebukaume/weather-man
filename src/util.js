@@ -13,9 +13,9 @@ const formatDatetime = (epoch) => {
   };
 };
 
-const kelvinToCelcius = (temp) => Math.ceil(temp - 273.15);
+const kelvinToCelcius = temp => Math.ceil(temp - 273.15);
 
-const kelvinToFahrenheit = (temp) => Math.ceil(1.8 * (temp - 273) + 32);
+const kelvinToFahrenheit = temp => Math.ceil(1.8 * (temp - 273) + 32);
 
 
 export { formatDatetime, kelvinToCelcius, kelvinToFahrenheit };

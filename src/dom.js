@@ -1,3 +1,4 @@
+/* eslint-env browser */
 const DOM = (() => {
   const dayElement = document.querySelector('#day');
   const timeElement = document.querySelector('#time');
@@ -26,7 +27,7 @@ const DOM = (() => {
       extreme: 'https://media.giphy.com/media/xCpz28xnEPdDi/giphy.gif',
     };
 
-    const key = Object.keys(IMAGE_SRC).filter((type) => imageKey.includes(type));
+    const key = Object.keys(IMAGE_SRC).filter(type => imageKey.includes(type));
 
     const weatherImage = document.querySelector('#weather-image').firstElementChild;
     weatherImage.src = IMAGE_SRC[key];

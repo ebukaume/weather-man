@@ -1,3 +1,4 @@
+/* eslint-env browser */
 const fetchAPI = async (url) => {
   try {
     const response = await fetch(url, { mode: 'cors' });
