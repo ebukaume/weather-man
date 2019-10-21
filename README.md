@@ -31,7 +31,7 @@ The full project requirements can be found [here](https://www.theodinproject.com
 - npm
 - webpack
 
-### ✨ [Live Demo](https://raw.githack.com/ebukaume/weather-man/weather-app/dist/index.html)
+### ✨ [Live Demo](https://raw.githack.com/ebukaume/weather-man/master/dist/index.html)
 
 ## Usage
 
