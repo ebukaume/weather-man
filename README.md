@@ -47,7 +47,7 @@ $ git clone https://github.com/ebukaume/weather-man.git
 $ cd weather-man
 $ npm install
 $ npm run build
-$ npm run deploy
+$ npm run start
 ```
 
 > Open `http://127.0.0.1:8080` using your favourite broswer, if it doesn't open automatically.
