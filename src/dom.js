@@ -12,6 +12,8 @@ const DOM = (() => {
   const setWeatherImage = (weather) => {
     const imageKey = weather.toLowerCase();
 
+    const DEFAULT_IMG = 'https://media0.giphy.com/media/d8Wf0rW5FCcFy/giphy.gif';
+
     const IMAGE_SRC = {
       cloud: 'https://media2.giphy.com/media/3o7rc6sa2RvKo8K5EI/giphy.gif',
       snow: 'https://media3.giphy.com/media/Xi2Xu0MejhsUo/giphy.gif',
@@ -30,7 +32,7 @@ const DOM = (() => {
     const key = Object.keys(IMAGE_SRC).filter(type => imageKey.includes(type));
 
     const weatherImage = document.querySelector('#weather-image').firstElementChild;
-    weatherImage.src = IMAGE_SRC[key];
+    weatherImage.src = IMAGE_SRC[key] || DEFAULT_IMG;
   };
 
   const renderWeatherData = (data) => {
