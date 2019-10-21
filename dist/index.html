@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://kit.fontawesome.com/c606d77842.js" crossorigin="anonymous"></script>
+    <title>Weather Man</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand mb-0 mx-auto">Weather Man</a>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div id="input">
+          <form action="#">
+            <input id='query' type="text" placeholder="Enter a city name" required>
+            <button id='search'>Search</button>
+          </form>
+        </div>
+        <div class="container">
+          <div id="output" class="m-auto">
+            <div id="location-data" class="pt-4">
+              <div id="datetime" class="pl-4">
+                <span id="day" class="font-weight-bold"></span>
+                <span id="time" class="font-weight-bold"></span>
+              </div>
+              <div id="geo" class="pr-4">
+                  <span id="city" class="font-weight-bold"></span>
+                  <span id="country" class="text-right font-weight-bold"></span>
+              </div>
+            </div>
+            <div id="weather-image" class=" mx-auto">
+              <img class="img-fluid" src="https://media0.giphy.com/media/d8Wf0rW5FCcFy/giphy.gif" alt="weather condition">
+            </div>
+            <div id="weather-data" class="p-4">
+              <div id="temperature" class="font-weight-bold"></div>
+              <div id="others" class="font-weight-bold"></div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>&copy; Weather Man, 2019</span>
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
+</html>
