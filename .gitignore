@@ -59,3 +59,13 @@ typings/
 
 # next.js build output
 .next
+
+# local linter
+.eslintrc.json
+
+#secrets
+.keys.config.js
+
+#style dev helpers
+.scss
+.css.map
