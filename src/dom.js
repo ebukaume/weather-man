@@ -1,4 +1,13 @@
 const DOM = (() => {
+  const dayElement = document.querySelector('#day');
+  const timeElement = document.querySelector('#time');
+  const cityElement = document.querySelector('#city');
+  const countryElement = document.querySelector('#country');
+  const temperatureElement = document.querySelector('#temperature');
+  const weatherElement = document.querySelector('#others');
+
+  const clearInputField = () => { document.querySelector('#query').value = ''; };
+
   const setWeatherImage = (weather) => {
     const imageKey = weather.toLowerCase();
 
@@ -23,21 +32,13 @@ const DOM = (() => {
     weatherImage.src = IMAGE_SRC[key];
   };
 
-  const updateWeatherInfo = (data) => {
+  const renderWeatherData = (data) => {
     const {
       country, city, weather, temp, datetime,
     } = data;
     const { day, hour, minute } = datetime;
     const { fahrenheit, celcius } = temp;
 
-    const dayElement = document.querySelector('#day');
-    const timeElement = document.querySelector('#time');
-    const cityElement = document.querySelector('#city');
-    const countryElement = document.querySelector('#country');
-    const temperatureElement = document.querySelector('#temperature');
-    const weatherElement = document.querySelector('#others');
-
-    document.querySelector('#query').value = '';
     setWeatherImage(weather);
     cityElement.innerHTML = city;
     countryElement.innerHTML = country;
@@ -47,10 +48,16 @@ const DOM = (() => {
     weatherElement.innerHTML = weather;
   };
 
+
+  const updateWeatherInfo = (data) => {
+    clearInputField();
+    renderWeatherData(data);
+  };
+
   const error = (city) => {
-    // document.querySelector('#error').classList.remove('hidden');
     // eslint-disable-next-line no-alert
-    alert(`Could not find data for ${city}!`);
+    clearInputField();
+    alert(`Could not find weather information for ${city}!`);
   };
 
   return { updateWeatherInfo, error };
