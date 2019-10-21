@@ -12,7 +12,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
     "watch": "webpack --watch --mode production",
-    "deploy": "live-server ./dist/"
+    "deploy": "live-server ./dist/",
+    "start": "./dist/index.html"
   },
   "repository": {
     "type": "git",
