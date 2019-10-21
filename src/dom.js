@@ -27,6 +27,7 @@ const DOM = (() => {
       sun: 'https://media0.giphy.com/media/13TM6acSU6sZFu/giphy.gif',
       mist: 'https://media1.giphy.com/media/McDhCoTyRyLiE/giphy.gif',
       extreme: 'https://media.giphy.com/media/xCpz28xnEPdDi/giphy.gif',
+      haze: 'https://media1.giphy.com/media/6hNJHnfsuoFDa/giphy.gif',
     };
 
     const key = Object.keys(IMAGE_SRC).filter(type => imageKey.includes(type));
