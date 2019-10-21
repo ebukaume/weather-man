@@ -19,7 +19,7 @@
 
 This project is part of a series of projects to be completed by students of [Microverse](https://www.microverse.org/ 'The Global School for Remote Software Developers!').
 
-Weather Man is a weather app built JavaScript. It consumes API from two different sources (Open Weather API and Google Maps API) and dynamically re-renders parts of the DOM. On page load, the app trys to guys your city from your IP address and then fetches weather information for it.
+Weather Man is a weather app built with vanilla JavaScript. It consumes APIs from two different sources (weather and geolocation) and dynamically re-renders part of the DOM. On page load, the app trys to guess the visitor's city from their IP address. It then goes out and fetche weather information for that city.
 
 The full project requirements can be found [here](https://www.theodinproject.com/courses/javascript/lessons/weather-app).
 
